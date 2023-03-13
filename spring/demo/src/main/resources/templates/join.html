@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/join.css">
+    <title>회원가입</title>
+</head>
+<body>
+    <div class="main">
+        <div class="login">
+            <h1 class="login-title">회원가입</h1>
+            <form th:action="@{/joining}" th:object="${userCreateForm}" method="post">
+                <div th:replace="form_errors :: formErrorsFragment"></div>
+                <div>
+                    <input type="text" class="form-control" th:field="*{username}" placeholder="이름">
+                </div>
+                <div>
+                    <input type="text" class="form-control" th:field="*{userid}" placeholder="사용할 아이디">
+                </div>
+                <div>
+                    <input type="text" class="form-control" th:field="*{password1}" placeholder="사용할 비밀번호">
+                </div>
+                <div>
+                    <input type="text" class="form-control" th:field="*{password2}" placeholder="사용할 비밀번호 확인">
+                </div>
+                <div>
+                    <input type="text" class="form-control" th:field="*{phone}" placeholder="전화번호">
+                </div>
+                <div>
+                    <input type="email" class="form-control" th:field="*{email}" placeholder="이메일">
+                </div>
+                <div>
+                    <select name="role" th:field="*{role}">
+                        <option value="학생" selected>학생</option>
+                        <option value="교수">교수</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="btn-btn-primary">회원가입</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

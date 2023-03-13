@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>회원정보 수정</h1>
+  <div>
+    <form th:action="@{/update}" method="post">
+      <table>
+        <tbody>
+            <th>이름</th>
+            <td>
+              <input type="text" th:value="${updateUser.username}" name="username"/>
+            </td>
+          </tr>
+          <tr>
+            <th>아이디</th>
+            <td>
+              <input type="text" th:value="${updateUser.userid}" name="userid" />
+            </td>
+          </tr>
+            <tr>
+              <th>비밀번호</th>
+              <td>
+                <input type="text" th:value="${updateUser.password}" name="password" />
+              </td>
+            </tr>
+          <tr>
+            <th>이메일</th>
+            <td>
+              <input type="text" th:value="${updateUser.email}" name="email"/>
+            </td>
+          </tr>
+          <tr>
+            <th>핸드폰번호</th>
+            <td>
+              <input type="text" th:value="${updateUser.phone}" name="phone" />
+            </td>
+          </tr>
+          <tr>
+            <th>역할</th>
+            <td>
+              <select name="role" th:value="${updateUser.role}">
+                <option value="학생" selected>학생</option>
+                <option value="교수">교수</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <button type="submit">수정</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

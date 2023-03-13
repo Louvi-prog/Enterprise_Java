@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MyPage.css" type="text/css">
+    <title>MyProfile</title>
+</head>
+<body>
+<form th:action="@{/update}" method="post">
+    <header>
+        <div class="nav-bar">
+            <div id="nav-title">RES</div>
+            <div class="non-click" id="nav-home">HOME</div>
+            <div class="non-click" id="nav-place">PLACE</div>
+            <div class="non-click" id="nav-community">COMMUNITY</div>
+            <div class="non-click" id="nav-profile">PROFILE</div>
+            <div class="non-click" id="nav-help">HELP</div>
+        </div>
+        <div class="nav-user">
+            <img class="nav-user-img" src="img/user.png">
+            <h3 class="nav-user-name">User</h3>
+        </div>
+        <div class="menuWrap">
+            <nav id="menu">
+                <ui class="menuList">
+                    <li class="listStyle"><a href="#">홈</a></li>
+                    <li class="listStyle"><a href="#">마이페이지</a></li>
+                    <li class="listStyle"><a href="#">로그인</a></li>
+                </ui>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <h1 class="MyPage-title">Account Information</h1>
+        <hr>
+        <div class="fix">
+            <div class="name">
+                <h2>change your name</h2>
+                <input type="text" class="in-name" th:value="${updateUser.username}" name="username" />
+            </div>
+            <div class="id">
+                <h2>change your id</h2>
+                <input type="text" class="in-id" th:value="${updateUser.userid}" name="userid" />
+            </div>
+            <div class="password">
+                <h2>change your password</h2>
+                <input type="text" class="in-password" th:value="${updateUser.password}" name="password" />
+            </div>
+            <div class="phone">
+                <h2>change your phone-Number</h2>
+                <input type="text" class="in-phone" th:value="${updateUser.phone}" name="phone" />
+            </div>
+            <div class="email">
+                <h2>change your email</h2>
+                <input type="text" class="in-email" th:value="${updateUser.email}" name="email" />
+            </div>
+            <div class="profile-picture">
+                <h2 class="profile-picture-box">Profile Picture</h2>
+                <img class="user-img" src="img/user.png">
+            </div>
+            <hr class="division">
+            <div class="btn-group">
+                <button type="submit" class="fix-btn">수정</button>
+                <button class="delete-btn"><a href="/delete">회원탈퇴</a></button>
+        </div>
+            </div>
+    </div>
+    <div class="nav-categori">
+        <img class="categori-img" src="img/menuBtn.png">
+    </div>
+    <footer>
+        <div class="manager-info"></div>
+    </footer>
+    <!--
+        <script type="text/javascript" src="/BBC/MyPage.js"></script>
+    -->
+    <script type="text/javascript" src="js/MyPage.js"></script>
+</form>
+</body>
+</html>

@@ -1,0 +1,323 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+}
+.nav-bar {
+    display: inline-block;
+    position: relative;
+    width: 1920px;
+    height: 100px;
+    background-color: #041a2f;
+    box-sizing: content-box;
+    border: none;
+    text-align: center;
+}
+
+#nav-title {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background-color:rgb(5, 7, 27);
+
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#nav-home {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    padding-top: 30px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+#nav-home:hover {
+    font-weight: 500;
+    color: black;
+    background-color: #E2E2E2;
+}
+
+#nav-place {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    padding-top: 30px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+#nav-place:hover {
+    font-weight: 500;
+    color: black;
+    background-color: #E2E2E2;
+}
+
+#nav-community {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    padding-top: 30px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+#nav-community:hover {
+    font-weight: 500;
+    color: black;
+    background-color: #E2E2E2;
+}
+
+#nav-profile {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    padding-top: 30px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+#nav-profile:hover {
+    font-weight: 500;
+    color: black;
+    background-color: #E2E2E2;
+}
+
+#nav-help {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+#nav-help:hover {
+    font-weight: 500;
+    color: black;
+    background-color: #E2E2E2;
+}
+
+.nav-user {
+    cursor: pointer;
+    float: right;  
+    position: relative; 
+    display: inline;
+    width: auto;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: -100px;
+    background-color:rgb(5, 7, 27);
+}
+
+.non-click {
+    color: #E2E2E2;
+    background-color: #041a2f;
+    font-weight: 500;
+}
+.click {
+    color: orange;
+    font-weight: 500;
+}
+
+.nav-user-img {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+.nav-user-name {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 35px;
+    margin-right: 20px;
+}
+
+.nav-categori {
+    cursor: pointer;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: solid black 5px;
+    border-radius: 50px 50px 50px 50px;
+}
+.categori-img {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.menuWrap {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 400;
+    width: 300px;
+    height: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    transition:  0.3s ease-in-out;
+    background-color: #f0f0f0;
+}
+#menuBtn {
+    width: 35px;
+    z-index: 401;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.menuWrap.on {
+    right: 0px;
+}
+
+.main {
+    display: inline;
+    position: absolute;
+    width: 1920px;
+    height: auto;
+    text-align: center;
+}
+.MyPage-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 48px;
+}
+.fix {
+    display: inline-block;
+    width: 1000px;
+    height: auto;
+}
+.name {
+    width: 400px;
+    height: auto;
+    font-size: 16px;
+}
+.in-name {
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border: solid 2px gray;
+    border-radius: 10px 10px 10px 10px;
+}
+.id {
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+    font-size: 16px;
+}
+.in-id {
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border: solid 2px gray;
+    border-radius: 10px 10px 10px 10px;
+}
+.password {
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+    font-size: 16px;
+}
+.in-password {
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border: solid 2px gray;
+    border-radius: 10px 10px 10px 10px;
+}
+.phone {
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+    font-size: 16px;
+}
+.in-phone {
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border: solid 2px gray;
+    border-radius: 10px 10px 10px 10px;
+}
+.email {
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+    font-size: 16px;
+}
+.in-email {
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border: solid 2px gray;
+    border-radius: 10px 10px 10px 10px;
+}
+.profile-picture {
+    display: inline-block;
+    position: absolute;
+    left: 900px;
+    top: 200px;
+}
+
+.division {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-group {
+    width: 800px;
+    height: auto;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    text-align: center;
+}
+.fix-btn {
+    width: 100px;
+    height: 60px;
+    background-color: rgb(48, 45, 45);
+    color: #E2E2E2;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.fix-btn:hover {
+    background-color: orange;
+}
+.delete-btn {
+    width: 100px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 3px solid gray;
+    border-radius: 10px 10px 10px 10px;
+
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: orange;
+}

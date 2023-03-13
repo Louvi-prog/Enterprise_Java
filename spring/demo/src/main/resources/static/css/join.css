@@ -1,0 +1,141 @@
+body {
+    margin: 0px;
+}
+.main {
+    width: 100%;
+    height: 860px;
+}
+.login {
+    text-align: center;
+    border: 4px solid black;
+    box-sizing: content-box;
+    border-radius: 50px 50px 50px 50px;
+    display: inline;
+    position: absolute;
+    width: 50%;
+    height: 860px;
+    box-sizing: content-box;
+    left: 450px;
+    top: 30px;
+}
+.login-title {
+    position: relative;
+    font-size: 48pt;
+    top: 5%;
+}
+.id {
+    display: block;
+    text-align: center;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 500px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 25%;
+    font-size: 30px;
+    font-weight: 900;
+}
+.password {
+    display: block;
+    text-align: center;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 25%;
+    font-size: 30px;
+    font-weight: 900;
+}
+.name {
+    display: block;
+    text-align: center;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 25%;
+    font-size: 30px;
+    font-weight: 900;
+}
+.phone {
+    display: block;
+    text-align: center;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 25%;
+    font-size: 30px;
+    font-weight: 900;
+}
+.email {
+    display: block;
+    text-align: center;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 25%;
+    font-size: 30px;
+    font-weight: 900;
+}
+.btn-group {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 500px;
+    height: 50px;
+    margin-top: 3%;
+    margin-left: 30%;
+}
+.login-btn {
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: rgb(238, 238, 143);
+    color: gray;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+}
+.btn-group {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 500px;
+    height: 50px;
+    margin-top: 8%;
+    margin-left: 26%;
+}
+.join-btn {
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: rgb(238, 238, 143);
+    color: gray;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+}
+.cancel-btn {
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: gray;
+    color: black;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+}
